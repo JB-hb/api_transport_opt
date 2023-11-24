@@ -6,7 +6,7 @@ import fetch from 'node-fetch'
 export class distance{
 
 	#destinationsURL = ''
-	#originsURL = ''	
+	#originURL = ''	
 	#url=`https://maps.googleapis.com/maps/api/distancematrix/json?destinations=${destinationsURL}&origins=${originURL}&units=metric&key=AIzaSyAkIqCzSqwTWVzjH0gTmfR65I-sCXrEN48`
 
 	static async getDistancia({ origin, destinations }){
